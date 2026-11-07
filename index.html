@@ -224,6 +224,7 @@
   .field input, .field select, .result textarea { font-size: 16px; }
 }
 </style>
+<script defer src="./assets/jszip.min.js"></script>
 </head>
 <body id="top">
 <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -302,7 +303,7 @@
 <article class="visa-card"><div class="card-top"><span class="card-icon"><svg aria-hidden="true"><use href="#chat"/></svg></span><span class="tag">Planning help</span></div><div class="duration guidance-title">Need help?</div><h3>Find the right option</h3><p>Start with your travel dates and where you are travelling from.</p><ul class="card-features"><li><svg aria-hidden="true"><use href="#check"/></svg>Unsure which duration to choose</li><li><svg aria-hidden="true"><use href="#check"/></svg>Travelling with family or friends</li><li><svg aria-hidden="true"><use href="#check"/></svg>Questions about your circumstances</li></ul><button class="button outline" type="button" data-visa="Help choosing an option">Build my enquiry <svg aria-hidden="true"><use href="#arrow"/></svg></button><div class="price-note">Tell us a little about your trip</div></article>
 </div><p class="visa-note"><svg aria-hidden="true"><use href="#info"/></svg><span>Visa issuance and entry are subject to immigration approval. Confirm eligibility, available services and the full fee breakdown before applying. <a href="https://www.gdrfad.gov.ae/en/services/f9e586fe-0642-11ec-0320-0050569629e8">View official tourist visa guidance ↗</a></span></p></section>
 <section class="section process" id="process" aria-labelledby="process-title"><div class="container process-grid"><div class="process-intro"><p class="eyebrow orange">A clearer starting point</p><h2 id="process-title">How to get started</h2><p>Know what to prepare and what to confirm before you begin your application.</p></div><ol class="process-list"><li><span class="number">01</span><div><h3>Tell us about your trip</h3><p>Choose a duration and bring together your nationality, travel dates and number of travellers.</p></div></li><li><span class="number">02</span><div><h3>Check the details</h3><p>Confirm the service available for your circumstances, required documents, processing estimate and complete quotation.</p></div></li><li><span class="number">03</span><div><h3>Agree the next steps</h3><p>Confirm the submission and payment arrangements with the team, then keep your application reference for follow-up.</p></div></li></ol></div></section>
-<section class="section container" id="requirements" aria-labelledby="documents-title"><div class="documents-grid"><div class="documents-copy"><p class="eyebrow orange">Your travel essentials</p><h2 id="documents-title">Documents to prepare</h2><p>Use this checklist to organise the basics. Additional documents may be requested depending on nationality and individual circumstances.</p><button class="button outline" id="download-checklist" type="button">Download the checklist <svg aria-hidden="true"><use href="#download"/></svg></button></div><div class="checklist"><div class="checklist-title"><span>Tourist visa essentials</span><span id="check-progress" aria-live="polite">0 of 4 ready</span></div><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Passport copy</strong><small>Check that your passport has at least six months’ validity.</small></span></label><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Personal photograph</strong><small>Have a clear, recent photograph ready.</small></span></label><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Return or onward travel</strong><small>Prepare the details of your planned journey out of the UAE.</small></span></label><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Medical insurance</strong><small>Confirm cover that is valid in the UAE.</small></span></label><p class="checklist-note">Based on <a href="https://www.gdrfad.gov.ae/en/services/f9e586fe-0642-11ec-0320-0050569629e8">GDRFA tourist visa guidance ↗</a>. Confirm the latest requirements before submission.</p></div></div></section>
+<section class="section container" id="requirements" aria-labelledby="documents-title"><div class="documents-grid"><div class="documents-copy"><p class="eyebrow orange">Your travel essentials</p><h2 id="documents-title">Documents to prepare</h2><p>Use this checklist to organise the basics. Additional documents may be requested depending on nationality and individual circumstances.</p><a class="button outline" id="download-checklist" href="./assets/johar-zaman-tourist-visa-checklist.docx" download>Download checklist (Word) <svg aria-hidden="true"><use href="#download"/></svg></a><p id="checklist-download-status" role="status" hidden></p></div><div class="checklist"><div class="checklist-title"><span>Tourist visa essentials</span><span id="check-progress" aria-live="polite">0 of 4 ready</span></div><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Passport copy</strong><small>Check that your passport has at least six months’ validity.</small></span></label><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Personal photograph</strong><small>Have a clear, recent photograph ready.</small></span></label><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Return or onward travel</strong><small>Prepare the details of your planned journey out of the UAE.</small></span></label><label class="check-item"><input type="checkbox" class="document-check"><span><strong>Medical insurance</strong><small>Confirm cover that is valid in the UAE.</small></span></label><p class="checklist-note">Based on <a href="https://www.gdrfad.gov.ae/en/services/f9e586fe-0642-11ec-0320-0050569629e8">GDRFA tourist visa guidance ↗</a>. Confirm the latest requirements before submission.</p></div></div></section>
 <section class="section enquiry-section" id="enquiry" aria-labelledby="enquiry-title"><div class="container enquiry-grid"><div class="enquiry-intro"><p class="eyebrow">Start with the essentials</p><h2 id="enquiry-title">Send your visa enquiry</h2><p>Build a short enquiry with the details needed to discuss your trip. Review your message and send it to Johar Zaman Travels by email or WhatsApp.</p><div class="mini-note"><svg aria-hidden="true"><use href="#info"/></svg><span>Use your enquiry to ask about eligibility, required documents and the full cost of your trip.</span></div></div><form class="enquiry-form" id="visa-enquiry"><div class="form-heading"><h3>Plan your visa enquiry</h3><span>About a minute</span></div><div class="form-fields"><label class="field"><span>Visa interest</span><select id="visa-interest" name="visa" required><option>30-day tourist visa</option><option>60-day tourist visa</option><option>Help choosing an option</option></select></label><label class="field"><span>Nationality</span><input id="nationality" name="nationality" type="text" placeholder="e.g. Indian" maxlength="70" required autocomplete="off"></label><label class="field"><span>Where are you now?</span><select id="location" name="location" required><option value="Outside the UAE">Outside the UAE</option><option value="Inside the UAE">Inside the UAE</option></select></label><label class="field"><span>Number of travellers</span><input id="travellers" name="travellers" type="number" value="1" min="1" max="50" step="1" required></label><label class="field full"><span>Planned arrival date (optional)</span><input id="arrival" name="arrival" type="date"></label></div><button class="button" type="submit">Create my enquiry <svg aria-hidden="true"><use href="#arrow"/></svg></button><p class="form-note">Review your enquiry before sending it from your email app or WhatsApp.</p><div class="result" id="enquiry-result" hidden><h4>Your enquiry is ready</h4><label class="field"><span>Review and edit your message</span><textarea id="enquiry-message" spellcheck="false"></textarea></label><div class="result-actions">
   <a class="button" id="email-enquiry">Submit by email</a>
   <a class="button whatsapp-button" id="whatsapp-enquiry" target="_blank" rel="noopener noreferrer">
@@ -355,30 +356,51 @@ documentChecks.forEach(checkbox => {
     document.querySelector('#check-progress').textContent = ready + ' of 4 ready';
   });
 });
-function downloadText(filename, text) {
-  const url = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' }));
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = filename;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-document.querySelector('#download-checklist').addEventListener('click', () => {
-  const lines = documentChecks.map(checkbox => {
-    const label = checkbox.closest('label');
-    return (checkbox.checked ? '[x] ' : '[ ] ') + label.querySelector('strong').textContent + '\n    ' + label.querySelector('small').textContent;
-  });
-  downloadText('johar-zaman-visa-checklist.txt', [
-    'JOHAR ZAMAN TRAVELS LLC',
-    'UAE TOURIST VISA PREPARATION CHECKLIST',
-    '',
-    ...lines,
-    '',
-    'Additional documents may be required. Confirm current requirements before submission.',
-    'Official guidance: https://www.gdrfad.gov.ae/en/services/f9e586fe-0642-11ec-0320-0050569629e8'
-  ].join('\n'));
+const checklistDownload = document.querySelector('#download-checklist');
+const checklistDownloadStatus = document.querySelector('#checklist-download-status');
+checklistDownload.addEventListener('click', async event => {
+  const checkedItems = documentChecks.map(checkbox => checkbox.checked);
+  if (checklistDownload.getAttribute('aria-busy') === 'true') {
+    event.preventDefault();
+    return;
+  }
+  if (!checkedItems.includes(true)) return;
+
+  event.preventDefault();
+  checklistDownload.setAttribute('aria-busy', 'true');
+  checklistDownloadStatus.hidden = true;
+  const download = document.createElement('a');
+  download.download = checklistDownload.href.split('/').pop();
+  try {
+    const response = await fetch(checklistDownload.href);
+    if (!response.ok) throw new Error('Could not fetch the Word checklist');
+    const archive = await window.JSZip.loadAsync(await response.arrayBuffer());
+    const documentPath = 'word/document.xml';
+    const content = await archive.file(documentPath).async('string');
+    let item = 0;
+    const updated = content.replace(/<w:t>☐<\/w:t>/g, () => {
+      return checkedItems[item++] ? '<w:t>☑</w:t>' : '<w:t>☐</w:t>';
+    });
+    if (item !== checkedItems.length) throw new Error('Word checklist items did not match the page');
+    archive.file(documentPath, updated);
+    const file = await archive.generateAsync({
+      type: 'blob',
+      compression: 'DEFLATE',
+      mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    });
+    const url = URL.createObjectURL(file);
+    download.href = url;
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  } catch {
+    checklistDownloadStatus.textContent = 'Your ticks could not be saved in the Word document. Downloading a blank copy.';
+    checklistDownloadStatus.hidden = false;
+    download.href = checklistDownload.href;
+  } finally {
+    checklistDownload.removeAttribute('aria-busy');
+  }
+  document.body.appendChild(download);
+  download.click();
+  download.remove();
 });
 const form = document.querySelector('#visa-enquiry');
 const enquiryResult = document.querySelector('#enquiry-result');
