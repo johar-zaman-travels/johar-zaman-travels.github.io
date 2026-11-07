@@ -223,6 +223,39 @@
   font-size: 15px;
   line-height: 1.7;
 }
+.visit-card address {
+  margin-top: 11px;
+  color: var(--muted);
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.6;
+}
+.visit-media {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 20px;
+}
+.visit-media iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--white);
+}
+.visit-storefront { margin: 0 auto; width: 100%; max-width: 330px; }
+.visit-storefront img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.visit-storefront figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+@media (max-width: 760px) {
+  .visit-media { grid-template-columns: minmax(0, 1fr); }
+  .visit-media iframe { min-height: 270px; }
+}
 </style>
 <script defer src="./assets/jszip.min.js"></script>
 </head>
@@ -315,7 +348,26 @@
   </a>
 </div></div></form></div></section>
 <section class="section container" id="faqs" aria-labelledby="faq-title"><div class="faq-grid"><div class="faq-intro"><p class="eyebrow orange">A few things to know</p><h2 id="faq-title">Frequently asked questions</h2><p>The essentials to consider before you start your UAE tourist visa enquiry.</p></div><div class="faq-list"><details><summary>Which tourist visa duration should I choose?</summary><p>The 30 and 60 day single entry tourist visa options offer different lengths of stay. Start with your planned itinerary, then confirm your eligibility and the appropriate option before applying. <a href="https://www.gdrfad.gov.ae/en/services/f9e586fe-0642-11ec-0320-0050569629e8">See GDRFA guidance ↗</a></p></details><details><summary>What is the total cost?</summary><p>Request a written quotation for your circumstances. Confirm the government charges, service fees, insurance, applicable taxes and any additional charges before making a payment.</p></details><details><summary>How long will the application take?</summary><p>Confirm the current processing estimate when your documents are reviewed. Allow time for additional checks and requests from the immigration authority.</p></details><details><summary>Does every traveller need to apply in advance?</summary><p>Entry requirements depend on nationality and individual circumstances. Check whether you qualify for visa-free entry or a visa on arrival before arranging a tourist visa. <a href="https://u.ae/en/information-and-services/visa-and-emirates-id/Visa-information/do-you-need-an-entry-permit-or-a-visa-to-enter-the-uae">Check official entry guidance ↗</a></p></details><details><summary>How do I send my enquiry?</summary><p>Choose Submit by email to open a draft in your email app, or Send on WhatsApp to open a chat with your message ready. Review the message and tap Send in the app.</p></details><details><summary>Can a travel agent guarantee approval?</summary><p>The immigration authority decides whether to issue a visa. Confirm the terms, refund policy and application conditions with the service provider before paying.</p></details></div></div></section>
-<section class="container visit" id="contact" aria-labelledby="visit-title"><div class="visit-card"><div><p class="eyebrow orange">Johar Zaman Travels LLC</p><h2 id="visit-title">Find us in Dubai.</h2><p>Look up our business listing for directions and contact information. Confirm opening hours before visiting.</p></div><a class="button outline" href="https://www.google.com/maps/search/?api=1&amp;query=Johar%20Zaman%20Travels%20LLC%20Dubai">Find us on Google Maps <svg aria-hidden="true"><use href="#pin"/></svg></a></div></section>
+<section class="container visit" id="contact" aria-labelledby="visit-title">
+  <div class="visit-card">
+    <div>
+      <p class="eyebrow orange">Johar Zaman Travels LLC</p>
+      <h2 id="visit-title">Find us in Dubai</h2>
+      <address>17, 22B Street<br>Ras Al Khor Industrial 1, Dubai</address>
+    </div>
+    <a class="button outline" href="https://go.2gis.com/Cy2zn">Get directions in 2GIS <svg aria-hidden="true"><use href="#pin"/></svg></a>
+    <div class="visit-media">
+      <iframe title="Map showing the Johar Zaman Travels office"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=55.33766%2C25.176375%2C55.34246%2C25.179375&amp;layer=mapnik&amp;marker=25.177875%2C55.34006"
+        loading="lazy"></iframe>
+      <figure class="visit-storefront">
+        <img src="./assets/johar-zaman-storefront.webp" width="517" height="641" loading="lazy" decoding="async"
+          alt="Johar Zaman Travels storefront with its red sign above the entrance">
+        <figcaption>Johar Zaman Travels storefront</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 </main>
 <footer class="footer"><div class="container"><div class="footer-main"><a class="brand" href="#top" aria-label="Johar Zaman Travels LLC home"><span class="brand-icon"><svg aria-hidden="true"><use href="#plane"/></svg></span><span class="brand-name">Johar Zaman<small>Travels LLC</small></span></a><p>Dubai, United Arab Emirates.</p><nav class="footer-links" aria-label="Footer"><a href="#visas">Visa options</a><a href="#requirements">Checklist</a><a href="#contact">Find us</a></nav></div><div class="footer-bottom"><span>© <span id="year">2026</span> Johar Zaman Travels LLC</span><span>Photography by <a href="https://unsplash.com/@fabienbellanger">Fabien BELLANGER</a> / <a href="https://unsplash.com/photos/burj-khalifa-skyline-in-dubai-WyfXOHgI49s">Unsplash</a></span><a href="#top">Back to top ↑</a></div></div></footer>
 <div class="mobile-cta"><p>Ready for Dubai?<small>Start with your travel plans</small></p><a class="button" href="#enquiry">Plan my visa <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
