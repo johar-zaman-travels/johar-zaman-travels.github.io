@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Johar Zaman Travels LLC in Dubai, United Arab Emirates. Find the company and prepare the details for your travel inquiry.">
+  <meta name="theme-color" content="#142d26">
+  <title>Johar Zaman Travels LLC | Dubai, UAE</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23142d26'/%3E%3Cpath d='M17 37 48 16 37 49 30 34Z' fill='%23e6b97f'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --green: #142d26;
+      --deep: #10251f;
+      --cream: #f7f3e9;
+      --paper: #fffcf5;
+      --ink: #172f27;
+      --muted: #4c5d53;
+      --line: #d8d7c9;
+      --gold: #e6b97f;
+      --serif: Georgia, "Times New Roman", serif;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid #a45c27; outline-offset: 5px; }
+    .dark a:focus-visible { outline-color: var(--gold); }
+    .wrap { width: min(100% - 64px, 1240px); margin-inline: auto; }
+    .skip { position: absolute; z-index: 3; top: 12px; left: 12px; padding: 12px; transform: translateY(-180%); background: var(--paper); color: var(--ink); }
+    .skip:focus { transform: none; }
+    .dark { color: var(--cream); background: var(--green); }
+    .header { border-bottom: 1px solid #ffffff28; }
+    .header-inner { min-height: 82px; display: flex; justify-content: space-between; align-items: center; gap: 22px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
+    .mark { width: 41px; height: 41px; padding: 8px; border: 1px solid #e6b97f80; border-radius: 50%; color: var(--gold); flex: 0 0 auto; }
+    .brand strong { display: block; font-size: .93rem; letter-spacing: .015em; }
+    .brand small { display: block; margin-top: 4px; color: #d1dcd1; font-size: .63rem; letter-spacing: .14em; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 26px; align-items: center; }
+    nav a { font-size: .86rem; text-decoration: none; }
+    nav a:hover, .footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+    .hero { display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: clamp(24px, 5vw, 76px); padding-block: clamp(52px, 8vw, 105px); }
+    .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 19px; font-size: .7rem; font-weight: 700; letter-spacing: .15em; line-height: 1.5; text-transform: uppercase; }
+    .eyebrow::before { content: ""; display: inline-block; width: 19px; height: 1px; background: currentColor; }
+    .dark .eyebrow { color: var(--gold); }
+    h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 400; }
+    h1 { font-size: clamp(3rem, 6vw, 6.25rem); line-height: .95; letter-spacing: -.063em; }
+    h1 span { display: block; color: var(--gold); font-style: italic; }
+    .hero-copy > p:not(.eyebrow) { max-width: 37ch; margin: 25px 0 30px; color: #dce5d8; font-size: 1.04rem; line-height: 1.65; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 48px; padding: 12px 19px; border: 1px solid transparent; background: var(--gold); color: var(--deep); font-size: .88rem; font-weight: 700; text-decoration: none; }
+    .button:hover { background: #f0c997; }
+    .button svg { width: 17px; height: 17px; flex: 0 0 auto; }
+    .visual { margin: 0; border: 1px solid #e6b97f55; background: var(--deep); }
+    .visual > svg { width: 100%; height: auto; display: block; }
+    .visual figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; padding: 13px 17px; border-top: 1px solid #e6b97f55; color: #d5dfd3; font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
+    .section { padding-block: clamp(55px, 7vw, 96px); }
+    .intro { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 20px 50px; margin-bottom: 35px; }
+    h2 { font-size: clamp(2.4rem, 5vw, 4.45rem); line-height: 1.02; letter-spacing: -.054em; }
+    .intro > p, .location-copy > p:not(.eyebrow) { max-width: 46ch; margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.65; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; padding: 0; border-block: 1px solid var(--line); list-style: none; }
+    .steps li { padding: 25px 24px 27px; }
+    .steps li + li { border-left: 1px solid var(--line); }
+    .step-number { display: inline-block; margin-bottom: 22px; color: #794a24; font-size: .73rem; font-weight: 700; letter-spacing: .13em; }
+    h3 { font-size: 1.63rem; letter-spacing: -.033em; }
+    .steps p { margin: 10px 0 0; color: var(--muted); font-size: .93rem; line-height: 1.55; }
+    .location { display: grid; grid-template-columns: 1.2fr .8fr; border: 1px solid var(--line); margin-bottom: clamp(50px, 7vw, 90px); }
+    .location-copy { background: var(--paper); padding: clamp(25px, 5vw, 60px); }
+    .location-copy > p:not(.eyebrow) { margin: 18px 0 24px; }
+    .location .button { background: var(--green); color: var(--cream); }
+    .location .button:hover { background: #29493d; }
+    .location-art { min-height: 230px; display: grid; place-content: center; padding: 30px; text-align: center; background-color: var(--green); background-image: repeating-linear-gradient(0deg, transparent 0 30px, #ffffff16 30px 31px), repeating-linear-gradient(90deg, transparent 0 30px, #ffffff16 30px 31px); color: var(--gold); }
+    .location-art svg { display: block; width: 44px; height: 44px; margin: 0 auto 11px; }
+    .location-art strong { font: italic 3.4rem/1 var(--serif); letter-spacing: -.07em; }
+    .location-art span { margin-top: 12px; color: #e2ebe1; font-size: .68rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .footer { background: var(--deep); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 12px 25px; flex-wrap: wrap; padding-block: 24px; font-size: .8rem; color: #d9e1d6; }
+    .footer a { text-decoration: none; }
+    @media (max-width: 840px) {
+      .hero { grid-template-columns: 1fr; }
+      .visual { max-width: 650px; width: 100%; }
+      .intro { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 590px) {
+      .wrap { width: calc(100% - 36px); }
+      .header-inner { min-height: 0; padding-block: 15px; align-items: flex-start; flex-direction: column; gap: 15px; }
+      nav { justify-content: flex-start; gap: 10px 19px; }
+      .steps, .location { grid-template-columns: 1fr; }
+      .steps li { padding-inline: 6px; }
+      .steps li + li { border-left: 0; border-top: 1px solid var(--line); }
+      .step-number { margin-bottom: 12px; }
+      .location-art { min-height: 180px; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header dark">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M3 17 29 3 19 29l-5-11z"/><path d="m14 18 9-9" fill="none" stroke="#142d26" stroke-width="1.5"/></svg>
+        <span><strong>Johar Zaman Travels LLC</strong><small>Dubai, United Arab Emirates</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#company">Company</a>
+        <a href="#planning">Travel planning</a>
+        <a href="#location">Location</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="dark" id="company" aria-labelledby="company-title">
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Travel company · Dubai, UAE</p>
+          <h1 id="company-title">Johar Zaman <span>Travels LLC</span></h1>
+          <p>Planning a trip? Get your travel details together and look up our Dubai location before you visit.</p>
+          <a class="button" href="#location">Find us in Dubai
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+        <figure class="visual">
+          <svg viewBox="0 0 650 456" role="img" aria-labelledby="art-title" xmlns="http://www.w3.org/2000/svg">
+            <title id="art-title">Illustration of the Dubai skyline with a sweeping flight path</title>
+            <defs>
+              <linearGradient id="sky" x2=".9" y2="1">
+                <stop stop-color="#23483a"/><stop offset="1" stop-color="#122820"/>
+              </linearGradient>
+              <linearGradient id="sun" x2="0" y2="1">
+                <stop stop-color="#f2c993"/><stop offset="1" stop-color="#c7885b"/>
+              </linearGradient>
+              <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+                <path d="M36 0H0v36" fill="none" stroke="#d1e2cd" stroke-opacity=".16"/>
+              </pattern>
+            </defs>
+            <path fill="url(#sky)" d="M0 0h650v456H0z"/>
+            <path fill="url(#grid)" d="M0 0h650v456H0z"/>
+            <circle cx="428" cy="177" r="93" fill="url(#sun)"/>
+            <g fill="none" stroke="#edd3ac" stroke-opacity=".29">
+              <circle cx="428" cy="177" r="110"/><circle cx="428" cy="177" r="128" stroke-dasharray="1 7"/>
+              <path d="M32 277h586M32 293h586M32 309h586M32 325h586"/>
+            </g>
+            <path d="M25 278c112-150 249-188 360-157 66 19 109 45 235-45" fill="none" stroke="#ffe0a9" stroke-width="2" stroke-dasharray="5 8"/>
+            <circle cx="25" cy="278" r="4" fill="#e6b97f"/>
+            <path fill="#f7e1b9" d="m605 74 25-8-13 23-3-9-9-6z"/>
+            <path d="M0 355h36v-20h20v-14h14v14h18v-28h19v-31h13v31h18v43h18v-52h16v-17h13v17h15v30h16v-54h12v-24h9v24h13v72h20v-22h15v-21h23v21h16v-44h15v-32h13v-44h11v-43h8v-43h7v-35h5v-37h3v37h6v35h6v43h8v43h10v44h13v32h18v44h17v-20h22v20h15v-61h12v-14h9v14h13v61h19v-32h19v-15h13v15h16v-50h15v-16h13v16h16v64h33v108H0z" fill="#10251f" stroke="#d8b283" stroke-width="1.25" stroke-linejoin="round"/>
+            <path d="M0 371h650M0 390h650M0 416h650M0 442h650" stroke="#e6b97f" stroke-opacity=".29"/>
+            <path d="M112 350 70 456m112-106-24 106m93-106-10 106m86-106v106m78-106 11 106m64-106 24 106m52-106 40 106" stroke="#e6b97f" stroke-opacity=".21"/>
+            <g fill="#f4d7ab" font-family="monospace" font-size="14" letter-spacing="2">
+              <text x="33" y="47">DXB</text><text x="33" y="68" font-size="10">UAE</text>
+            </g>
+          </svg>
+          <figcaption><span>Dubai, United Arab Emirates</span><span>Skyline illustration</span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="wrap section" id="planning" aria-labelledby="planning-title">
+      <div class="intro">
+        <div>
+          <p class="eyebrow">Before you enquire</p>
+          <h2 id="planning-title">Have your trip details handy.</h2>
+        </div>
+        <p>Three details make it easier to discuss your itinerary and compare the options that fit your plans.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="step-number">01 / ROUTE</span><h3>Where you’re going</h3><p>Note your departure city, destination and any stops you have in mind.</p></li>
+        <li><span class="step-number">02 / DATES</span><h3>When you’ll travel</h3><p>Have your preferred departure and return dates ready, plus any flexibility.</p></li>
+        <li><span class="step-number">03 / TRAVELLERS</span><h3>Who’s coming along</h3><p>Know the number of travellers and any baggage or accessibility needs.</p></li>
+      </ol>
+    </section>
+    <section class="wrap location" id="location" aria-labelledby="location-title">
+      <div class="location-copy">
+        <p class="eyebrow">Location</p>
+        <h2 id="location-title">Find us in Dubai.</h2>
+        <p>Search for Johar Zaman Travels LLC on Google Maps and check the listing for directions and opening hours before visiting.</p>
+        <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Johar%20Zaman%20Travels%20LLC%20Dubai">Search on Google Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M7 6h11v11"/></svg>
+        </a>
+      </div>
+      <div class="location-art" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M25 12c0 7-9 16-9 16S7 19 7 12a9 9 0 1 1 18 0Z"/><circle cx="16" cy="12" r="3"/></svg>
+        <strong>Dubai</strong><span>United Arab Emirates</span>
+      </div>
+    </section>
+  </main>
+  <footer class="footer dark">
+    <div class="wrap footer-inner"><span>Johar Zaman Travels LLC · Dubai, UAE</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
