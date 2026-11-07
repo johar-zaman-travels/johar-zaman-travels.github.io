@@ -430,8 +430,14 @@ arrivalInput.defaultValue = arrivalInput.min;
 form.addEventListener('submit', event => {
   event.preventDefault();
   const nationality = document.querySelector('#nationality');
-  if (!nationality.value.trim()) {
+  const nationalityValue = nationality.value.trim();
+  if (!nationalityValue) {
     nationality.setCustomValidity('Please enter your nationality.');
+    nationality.reportValidity();
+    return;
+  }
+  if (!/\p{L}/u.test(nationalityValue) || /\p{N}/u.test(nationalityValue)) {
+    nationality.setCustomValidity('Enter your nationality using letters and no numbers.');
     nationality.reportValidity();
     return;
   }
@@ -441,7 +447,7 @@ form.addEventListener('submit', event => {
     '',
     'I would like to enquire about a UAE tourist visa.',
     'Visa interest: ' + visaInterest.value,
-    'Nationality: ' + nationality.value.trim(),
+    'Nationality: ' + nationalityValue,
     'Current location: ' + document.querySelector('#location').value,
     'Travellers: ' + document.querySelector('#travellers').value,
     'Planned arrival: ' + arrival,
